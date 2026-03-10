@@ -13,16 +13,28 @@ This plugin is heavily styled after `opencode-antigravity-auth` but uses API key
 
 ## Installation
 
-### Add the Plugin
-Add the plugin to `~/.config/opencode/opencode.json`:
+To install this plugin on a new machine:
 
-```json
-{
-  "plugin": ["opencode-nvidia-auth"]
-}
-```
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Itsnishant4/opencode-nvidia-auth.git
+   cd opencode-nvidia-auth
+   ```
 
-(Note: since this is a local project, make sure to `pnpm link` or install from your scratch directory).
+2. **Install dependencies and build**:
+   ```bash
+   pnpm install
+   pnpm build
+   ```
+
+3. **Link to OpenCode**:
+   Add the **absolute path** of this directory to your `~/.config/opencode/opencode.json` file:
+
+   ```json
+   {
+     "plugin": ["/path/to/your/cloned/opencode-nvidia-auth"]
+   }
+   ```
 
 ### Configuration
 
