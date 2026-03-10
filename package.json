@@ -1,0 +1,38 @@
+{
+    "name": "opencode-nvidia-auth",
+    "version": "1.0.0",
+    "description": "NVIDIA NIM API authentication plugin for OpenCode - multiple API key support with load balancing",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "type": "module",
+    "license": "MIT",
+    "author": "antigravity",
+    "engines": {
+        "node": ">=20.0.0"
+    },
+    "files": [
+        "dist/",
+        "README.md"
+    ],
+    "scripts": {
+        "build": "tsc -p tsconfig.build.json",
+        "typecheck": "tsc --noEmit",
+        "test": "vitest run"
+    },
+    "peerDependencies": {
+        "typescript": "^5"
+    },
+    "devDependencies": {
+        "@types/node": "^24.10.1",
+        "@types/proper-lockfile": "^4.1.4",
+        "typescript": "^5.0.0",
+        "vitest": "^3.0.0"
+    },
+    "dependencies": {
+        "@opencode-ai/plugin": "^0.15.30",
+        "@opencode-ai/sdk": "^1.2.20",
+        "proper-lockfile": "^4.1.2",
+        "xdg-basedir": "^5.1.0",
+        "zod": "^4.0.0"
+    }
+}
